@@ -1,0 +1,435 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+
+@font-face {
+  font-family: 'Logirent';
+  src: url('../../../assets/font/logirent.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Arial Black', 'Poppins', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  background: black;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.logo {
+  position: absolute;
+  top: env(safe-area-inset-top, 30px);
+  left: 16px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: -1px;
+}
+.logo img {
+  height: 70px;   
+  width: auto;
+  border-radius: 50%; 
+}
+.logo p {
+ font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: #ff9800;
+}
+
+.background .bag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+opacity: 0.2;
+}
+
+
+
+.hero-img {
+  max-width: 80%;
+  animation: spin 20s linear infinite;
+  margin-left: 10%;
+  margin-top: 20%;
+
+}
+
+/* rotation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  position: relative;
+  margin-top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(220, 69, 4);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+   font-family: 'Dancing Script', cursive;
+  font-weight: 900;
+}
+.hero p{
+    position: relative;
+    margin-top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Gradient color */
+    background: linear-gradient(90deg, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Optional: subtle animation */
+    background-size: 200% 200%;
+   
+}
+
+
+
+
+
+/* scroll row */
+.scroll-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+   -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* button */
+.scroll-row .btn {
+  position: relative;
+  background: #1e1d1d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  min-width: 110px;
+  padding: 10px 10px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* active button */
+.scroll-row .btn.active {
+  background: #560606;
+  color: white;
+}
+
+/* image */
+.scroll-row .btn .btn-img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+
+}
+
+/* active button image scale */
+.scroll-row .btn.active .btn-img {
+  transform: scale(1.2);
+}
+
+/* name */
+.scroll-row .btn .btn-name {
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+}
+
+
+.menu1 {
+  margin-top: 20px;
+
+}
+/* pizza */
+.pizza {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 10px;
+  margin-top: 0px;
+    
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Pizza text */
+.pizza-text {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Noticia Text", serif;
+
+  font-style: normal;
+    /* Gradient text */
+    background: linear-gradient(
+      90deg,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    letter-spacing: 2px;
+    white-space: nowrap;
+  }
+
+  /* Line next to text */
+  .pizza-line {
+    height: 3px;
+  width: 250px;
+  margin-top: 10px;
+
+    background: linear-gradient(
+      90deg,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #131313
+    );
+
+    border-radius: 10px;
+  }
+
+
+
+
+   .pizza-row {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 0px;
+      scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
+  scrollbar-width: none; /* Firefox */
+    }
+
+    .pizza-row::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .pizza-row::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+
+    .pizza-card {
+      min-width: 200px;
+      background: #560606;
+      border-radius: 16px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+      scroll-snap-align: start;
+      flex-shrink: 0;
+    }
+
+    .pizza-img {
+      width: 290px;
+      height: 200px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      resize: cover;
+    }
+
+    .pizza-name {
+      font-size: 17px;
+      font-weight: 600;
+      margin: 6px 0;
+      color: #ffffff;
+    }
+
+    .pizza-price {
+      font-size: 15px;
+      color: #e6ca7c;
+      font-weight: bold;
+    }
+
+    /* MODAL BACKDROP */
+.pizza-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(6px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* MODAL CARD */
+.modal-content {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  position: relative;
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.modal-content h3 {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.modal-content p {
+  color: #ff5a00;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* CLOSE BUTTON – RESPONSIVE POSITION */
+.close-btn {
+  margin-top: 18px;
+
+  width: 13%;
+  max-width: 220px;
+  height: 40px;
+
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff7a18, #ff5a00);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+  box-shadow: 0 6px 15px rgba(255, 90, 0, 0.6);
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.close-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 90, 0, 0.8);
+}
+
+/* Click */
+.close-btn:active {
+  transform: scale(0.96);
+}
+
+.footer{
+  background:linear-gradient(135deg,#111,#1c1c1c);
+  color:#fff;
+  padding:50px 20px 15px;
+}
+
+.footer-container{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:40px;
+}
+
+.footer-logo img{
+  width:90px;
+  margin-bottom:10px;
+}
+
+.footer-logo h2{
+  color:#ff9800;
+  margin-bottom:5px;
+}
+
+.footer-logo p{
+  font-size:14px;
+  color:#ccc;
+}
+
+.footer-social h3,
+.footer-contact h3{
+  margin-bottom:15px;
+  color:#ff9800;
+}
+
+.footer-social a{
+  display:block;
+  text-decoration:none;
+  color:#ccc;
+  margin-bottom:10px;
+  transition:0.3s;
+}
+
+.footer-social a:hover{
+  color:#ff9800;
+  transform:translateX(6px);
+}
+
+.footer-contact p{
+  margin-bottom:10px;
+  color:#ccc;
+}
+
+.footer-contact i{
+  margin-right:8px;
+  color:#ff9800;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:40px;
+  padding-top:15px;
+  border-top:1px solid #333;
+  color:#aaa;
+  font-size:14px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .footer-container{
+    flex-direction:column;
+    text-align:center;
+  }
+}
