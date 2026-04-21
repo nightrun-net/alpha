@@ -1,0 +1,2237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Fira+Sans:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Salsa&family=Tilt+Neon&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Salsa&family=Tagesschrift&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Playpen+Sans+Arabic:wght@100..800&family=Salsa&family=Tagesschrift&display=swap" rel="stylesheet">
+  <title>Alpha Restaurant</title>
+  <link rel="stylesheet" href="menuarabic.css" />
+</head>
+<body>
+
+  <!-- BACKGROUND -->
+  <div class="background">
+   <img class="bag" src="../../../assets/ww2.jpg" alt="">
+  </div>
+
+  <!-- LOGO -->
+  <div class="logo">
+   <img src="../../../assets/xxx.png" alt="Logo">
+    <p>ألفا</p>
+  </div>
+
+  <!-- HERO + TITLE -->
+  <div class="hero">
+       <img class="hero-img" src="../../../assets/hero.png" alt="">
+    <h2 class="title">مطعم ألفا</h2>
+    <p class="description"> أهلاً بكم في مطعم ألفا، هنا سيتم تحضير أفضل المأكولات لضيوفنا الأعزاء
+ </p>
+  </div>
+
+
+
+<div class="scroll-row">
+  <button class="btn" onclick="btnClick('pizza')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">بيتزا</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('burger')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">برجر</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('pasta')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">ساندويتش</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('salad')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">دجاج</span>
+  </button>
+
+    <button class="btn" onclick="btnClick('اکل غربی')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">اکل غربی</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('sushi')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">لحم</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('steak')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">بطاطا</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('مزج')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">مزج</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('بوكس')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">بوكس</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('tacos')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">باستا</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('dessert')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">دايت</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('beverages')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">ستيك</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('روبيان')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">روبيان</span>
+  </button>
+
+
+  <button class="btn" onclick="btnClick('specials')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">سلطة</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('kola')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">مشروبات باردة</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('mojito')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">موهيتو</span>
+  </button>
+
+  <button class="btn" onclick="btnClick('asir')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">عصير</span>
+  </button>
+  <button class="btn" onclick="btnClick('icetea')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">ئايس تيا</span>
+  </button>
+  <button class="btn" onclick="btnClick('koktel')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">موكتيل</span>
+  </button>
+  <button class="btn" onclick="btnClick('milkshik')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">ميلك شيك</span>
+  </button>
+  <button class="btn" onclick="btnClick('frabe')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">فرابێ</span>
+  </button>
+  <button class="btn" onclick="btnClick('smozi')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">سموزي</span>
+  </button>
+  <button class="btn" onclick="btnClick('icelate')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">ئايس لاتئ</span>
+  </button>
+  <button class="btn" onclick="btnClick('lategarm')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">لاتێ گەرم</span>
+  </button>
+  <button class="btn" onclick="btnClick('garm6')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">فەخارنت گه رم</span>
+  </button>
+  <button class="btn" onclick="btnClick('energy')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">ئنيرجي ميكس</span>
+  </button>
+  <button class="btn" onclick="btnClick('krib')">
+     <img src="../../../assets/xxx.png" class="btn-img">
+    <span class="btn-name">كريب</span>
+  </button>
+</div>
+
+
+
+<div class="menu1">
+<!-- Pizza -->
+<div id="pizza" class="section">
+  <div class="pizza">
+    <div class="pizza-text">بيتزا</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+     <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">بيتزا مشكل</p>
+    <p class="pizza-price">11,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">بيتزا خضروات</p>
+    <p class="pizza-price">8,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">فاليو بيتزا</p>
+    <p class="pizza-price">9,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">بيتزا لحم</p>
+    <p class="pizza-price">11,000 IQD</p>
+  </div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">بيتزا دجاج</p>
+    <p class="pizza-price">9,000 IQD</p>
+  </div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">بيتزا بيبروني</p>
+    <p class="pizza-price">9,000 IQD</p>
+  </div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">بيتزا شيبس</p>
+    <p class="pizza-price">11,000 IQD</p>
+  </div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">بيتزا تونة</p>
+    <p class="pizza-price">9,000 IQD</p>
+  </div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">بيتزا دجاج بالشيبس</p>
+    <p class="pizza-price">9,000 IQD</p>
+  </div>
+
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">بيتزا مكسيكية</p>
+    <p class="pizza-price">11,000 IQD</p>
+  </div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">بیتزا كالسوني</p>
+    <p class="pizza-price">10,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">بیتزا مارغريتا</p>
+    <p class="pizza-price">7,000 IQD</p>
+  </div>
+
+
+
+</div>
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+<!-- Pizza -->
+
+
+<!-- Burger -->
+  <div id="burger" class="section">
+  <div class="pizza">
+    <div class="pizza-text">برجر</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">برجر لحم</p>
+    <p class="pizza-price">5,000 IQD</p>
+</div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">برجر دجاج</p>
+    <p class="pizza-price">4,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">تشيكن تشيز برجر</p>
+    <p class="pizza-price">7,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">تشيز برجر</p>
+    <p class="pizza-price">8,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">دبل برجر</p>
+    <p class="pizza-price">12,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">دبل تشيكن برجر</p>
+    <p class="pizza-price">11,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">ألفا برجر</p>
+    <p class="pizza-price">12,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">ألفا تشيكن برجر</p>
+    <p class="pizza-price">10,000 IQD</p>
+  </div>
+
+</div>
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+ <!-- Burger -->
+
+ <!-- Sandwich -->
+   <div id="pasta" class="section">
+  <div class="pizza">
+    <div class="pizza-text">ساندويتش</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">ساندويتش دجاج</p>
+    <p class="pizza-price">7,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">ساندويتش لحم</p>
+    <p class="pizza-price">10,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">ساندويتش بطاطس</p>
+    <p class="pizza-price">9,000 IQD</p>
+  </div>
+
+</div>
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+  <!-- Pasta -->
+
+    <!-- Salad -->
+      <div id="salad" class="section">
+  <div class="pizza">
+    <div class="pizza-text">دجاج</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">رول دجاج</p>
+  <p class="pizza-price">4,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بيتا دجاج</p>
+  <p class="pizza-price">3,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ساج دجاج</p>
+  <p class="pizza-price">7,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ساج دجاج ألفا</p>
+  <p class="pizza-price">10,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ساج دجاج بطاطس</p>
+  <p class="pizza-price">8,000 IQD</p>
+</div>
+
+
+</div>
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+
+      <div id="اکل غربی" class="section">
+  <div class="pizza">
+    <div class="pizza-text">اکل غربی</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">قلي</p>
+  <p class="pizza-price">6,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">قلي سيل</p>
+  <p class="pizza-price">6,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">قلي شيفان (رعاة)</p>
+  <p class="pizza-price">6,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">قلي وبيض</p>
+  <p class="pizza-price">6,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">قلي معلاق</p>
+  <p class="pizza-price">6,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">شوربة عدس</p>
+  <p class="pizza-price">3,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بيض (سلق أو قلي)</p>
+  <p class="pizza-price">3,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">وجبة فطور</p>
+  <p class="pizza-price">7,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">تشريب گص</p>
+  <p class="pizza-price">10,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">تشريب قلي</p>
+  <p class="pizza-price">7,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">دجاج مسحب</p>
+  <p class="pizza-price">16,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">مشويات كباب مشكل</p>
+  <p class="pizza-price">15,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">نفر تكة دجاج</p>
+  <p class="pizza-price">12,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">كباب دجاج</p>
+  <p class="pizza-price">12,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">نصف نفر دجاج</p>
+  <p class="pizza-price">7,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">نصف نفر لحم</p>
+  <p class="pizza-price">8,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">تمن ودجاج</p>
+  <p class="pizza-price">7,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ديكل (ديك كامل)</p>
+  <p class="pizza-price">45,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">نصف ديكل</p>
+  <p class="pizza-price">25,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">قوزي</p>
+  <p class="pizza-price">15,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">تمن وگص</p>
+  <p class="pizza-price">12,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+   <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">تمن وشاورما</p>
+  <p class="pizza-price">15,000 IQD</p>
+</div>
+
+
+</div>
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+
+
+    <!-- Salad -->
+
+      <!-- Sushi -->
+        <div id="sushi" class="section">
+  <div class="pizza">
+    <div class="pizza-text">لحم</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">رول لحم</p>
+  <p class="pizza-price">6,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">رول ألفا</p>
+  <p class="pizza-price">8,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بيتا لحم</p>
+  <p class="pizza-price">4,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بيتا ألفا</p>
+  <p class="pizza-price">5,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ساج لحم</p>
+  <p class="pizza-price">9,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ساج بطاطس لحم</p>
+  <p class="pizza-price">10,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ساج لحم ألفا</p>
+  <p class="pizza-price">11,000 IQD</p>
+</div>
+
+</div>
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+      <!-- Sushi -->
+
+        <!-- Steak -->
+          <div id="steak" class="section">
+  <div class="pizza">
+    <div class="pizza-text">بطاطا</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بطاطا مقلية</p>
+  <p class="pizza-price">3,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بطاطا تشيتوس</p>
+  <p class="pizza-price">6,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بطاطا جبن</p>
+  <p class="pizza-price">5,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ودجز</p>
+  <p class="pizza-price">5,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ذرة</p>
+  <p class="pizza-price">5,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">حلقات البصل</p>
+  <p class="pizza-price">5,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بطاطا مشوية</p>
+  <p class="pizza-price">6,000 IQD</p>
+</div>
+
+
+
+</div>
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+
+
+
+
+          <div id="مزج" class="section">
+  <div class="pizza">
+    <div class="pizza-text">مزج</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">دجاج ألفا</p>
+  <p class="pizza-price">9,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">كباب ألفا</p>
+  <p class="pizza-price">12,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">دجاج بليزا</p>
+  <p class="pizza-price">13,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ساندويچ لحم</p>
+  <p class="pizza-price">12,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">دجاج يوناني</p>
+  <p class="pizza-price">12,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">دجاج بليزا ألفا</p>
+  <p class="pizza-price">13,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">دجاج بولو</p>
+  <p class="pizza-price">11,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بولو دجاج</p>
+  <p class="pizza-price">13,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ذرة بليزا</p>
+  <p class="pizza-price">13,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ذرة دجاج بليزا</p>
+  <p class="pizza-price">12,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">لحم مشروم</p>
+  <p class="pizza-price">13,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بليزا ألفا</p>
+  <p class="pizza-price">14,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">دجاج بليزا ألفا</p>
+  <p class="pizza-price">13,000 IQD</p>
+</div>
+
+
+</div>
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+
+
+          <div id="بوكس" class="section">
+  <div class="pizza">
+    <div class="pizza-text">بوكس</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بوكس دجاج</p>
+  <p class="pizza-price">8,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بوكس لحم</p>
+  <p class="pizza-price">10,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بوكس لحم ألفا</p>
+  <p class="pizza-price">11,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بوكس دجاج ألفا</p>
+  <p class="pizza-price">10,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بوكس شاورما</p>
+  <p class="pizza-price">4,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">بوكس شاورما دجاج</p>
+  <p class="pizza-price">6,000 IQD</p>
+</div>
+
+
+</div>
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+
+
+        <!-- Steak -->
+
+          <!-- Tacos -->
+            <div id="tacos" class="section">
+  <div class="pizza">
+    <div class="pizza-text">باستا</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">باستا دجاج</p>
+    <p class="pizza-price">9,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">باستا لحم</p>
+    <p class="pizza-price">10,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">فيتوتشيني ألفريدو</p>
+    <p class="pizza-price">10,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">باستا دجاج فيتوتشيني</p>
+    <p class="pizza-price">9,000 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">فيتوتشيني</p>
+    <p class="pizza-price">10,000 IQD</p>
+  </div>
+
+</div>
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+          <!-- Tacos -->
+
+            <!-- Dessert -->
+              <div id="dessert" class="section">
+  <div class="pizza">
+    <div class="pizza-text">دايت</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">دايت دجاج</p>
+  <p class="pizza-price">7,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">دايت لحم</p>
+  <p class="pizza-price">11,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">دايت سلمون</p>
+  <p class="pizza-price">14,000 IQD</p>
+</div>
+
+
+
+</div>
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+            <!-- Dessert -->
+
+              <!-- Beverages -->
+ <div id="beverages" class="section">
+  <div class="pizza">
+    <div class="pizza-text">ستيك</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ستيك لحم</p>
+  <p class="pizza-price">14,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ستيك دجاج</p>
+  <p class="pizza-price">12,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ستيك ألفا</p>
+  <p class="pizza-price">12,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">ستيك سلمون</p>
+  <p class="pizza-price">16,000 IQD</p>
+</div>
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+</div>
+
+
+ <div id="روبيان" class="section">
+  <div class="pizza">
+    <div class="pizza-text">روبيان</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">روبيان</p>
+  <p class="pizza-price">15,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">روبيان حار</p>
+  <p class="pizza-price">12,000 IQD</p>
+</div>
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+              <!-- Beverages -->
+
+                <!-- Specials -->
+                  <div id="specials" class="section">
+  <div class="pizza">
+    <div class="pizza-text">سلطة</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">سلطة سيزر</p>
+  <p class="pizza-price">6,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">سلطة فروكا</p>
+  <p class="pizza-price">5,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">سلطة بروكلي</p>
+  <p class="pizza-price">7,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">سلطة يونانية</p>
+  <p class="pizza-price">5,000 IQD</p>
+</div>
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+  <img class="pizza-img" src="../../../assets/oo.png">
+  <p class="pizza-name">سلطة روكا</p>
+  <p class="pizza-price">5,000 IQD</p>
+</div>
+</div>
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+                <!-- Specials -->
+
+
+                                <!-- kola -->
+                  <div id="kola" class="section">
+  <div class="pizza">
+    <div class="pizza-text">مشروبات باردة</div>
+    <div class="pizza-line"></div>
+  </div>
+
+<!-- Pizza ROW -->
+<div class="pizza-row">
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">كوكاكولا علبة</p>
+    <p class="pizza-price">500 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">كوكاكولا قنينة</p>
+    <p class="pizza-price">500 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">سبرايت علبة</p>
+    <p class="pizza-price">500 IQD</p>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">سبرايت قنينة</p>
+    <p class="pizza-price">500 IQD</p>
+  </div>
+
+
+
+
+<div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">ماء</p>
+    <p class="pizza-price">250 IQD</p>
+</div>
+
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">عيران</p>
+    <p class="pizza-price">500 IQD</p>
+  </div>
+
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <p class="pizza-name">كوكاكولا دايت</p>
+    <p class="pizza-price">500 IQD</p>
+  </div>
+
+</div>
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img class="pizza-img" src="../../../assets/oo.png">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+                <!-- kola -->
+
+
+
+
+
+<!-- Mojito -->
+<div id="mojito" class="section">
+
+  <div class="pizza">
+    <div class="pizza-text">موهيتو</div>
+    <div class="pizza-line"></div>
+  </div>
+
+  <div class="pizza-row">
+
+
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موهيتو كلاسيك</p>
+      <p class="pizza-price">3500 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موهيتو فراولة</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موهيتو بلو هاواي</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موهيتو رمان</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موهيتو خوخ</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موهيتو باشن فروت</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موهيتو بلوبيري</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موهيتو مانجو</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موهيتو أناناس</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موهيتو ألفا</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+  </div>
+
+</div>
+<!-- Mojito -->
+
+
+
+<!-- Juice -->
+<div id="asir" class="section">
+
+  <div class="pizza">
+    <div class="pizza-text">عصير</div>
+    <div class="pizza-line"></div>
+  </div>
+
+  <div class="pizza-row">
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">برتقال</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">رمان</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ليمون نعنع</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">أناناس</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">مانجو</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">شيرموز</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">أفوكادو</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">كوكتيل</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ألفا</p>
+      <p class="pizza-price">5500 IQD</p>
+    </div>
+
+  </div>
+
+</div>
+<!-- Juice -->
+
+
+<!-- Ice Tea -->
+<div id="icetea" class="section">
+
+  <div class="pizza">
+    <div class="pizza-text">آيس تي</div>
+    <div class="pizza-line"></div>
+  </div>
+
+  <div class="pizza-row">
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس تي خوخ</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس تي ليمون</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس تي مانجو</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس تي باشن فروت</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+  </div>
+
+</div>
+<!-- Ice Tea -->
+
+
+
+
+<!-- Mocktail -->
+<div id="koktel" class="section">
+
+  <div class="pizza">
+    <div class="pizza-text">موكتيل</div>
+    <div class="pizza-line"></div>
+  </div>
+
+  <div class="pizza-row">
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موكتيل ألفا</p>
+      <p class="pizza-price">6000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موكتيل لافندر</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موكتيل بيناكولادا</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موكتيل بيري بلاست</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موكتيل خەونا وقيانوسي</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+  </div>
+
+</div>
+<!-- Mocktail -->
+
+<!-- Milkshake Section -->
+<div id="milkshik" class="section">
+
+  <div class="pizza">
+    <div class="pizza-text">ميلك شيك</div>
+    <div class="pizza-line"></div>
+  </div>
+
+  <div class="pizza-row">
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ميلك شيك نوتيلا</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ميلك شيك لوتوس</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ميلك شيك فستق</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ميلك شيك فانيلا</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ميلك شيك كيندر</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ميلك شيك أوريو</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ميلك شيك فراولة</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ميلك شيك شوكولاتة</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ميلك شيك كراميل</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ميلك شيك ألفا</p>
+      <p class="pizza-price">6000 IQD</p>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Frappe Section -->
+<div id="frabe" class="section">
+
+  <div class="pizza">
+    <div class="pizza-text">فرابيه</div>
+    <div class="pizza-line"></div>
+  </div>
+
+  <div class="pizza-row">
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">فرابيه شوكولاتة</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">فرابيه كراميل</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">فرابيه كوكيز</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">فرابيه فراولة</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">فرابيه كلاسيك</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<!-- Smoothie Section -->
+<div id="smozi" class="section">
+
+  <div class="pizza">
+    <div class="pizza-text">سموذي</div>
+    <div class="pizza-line"></div>
+  </div>
+
+  <div class="pizza-row">
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">سموذي مانجو</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">سموذي فراولة</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">سموذي بلوبيري</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">سموذي بيناكولادا</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">سموذي خوخ</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">سموذي ألفا</p>
+      <p class="pizza-price">5500 IQD</p>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Iced Latte Section -->
+<div id="icelate" class="section">
+
+  <div class="pizza">
+    <div class="pizza-text">آيس لاتيه</div>
+    <div class="pizza-line"></div>
+  </div>
+
+  <div class="pizza-row">
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس لاتيه</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس لاتيه فانيلا</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس لاتيه كراميل</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس لاتيه لوتوس</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس لاتيه فستق</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس لاتيه موكا</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس لاتيه وايت موكا</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس لاتيه روز</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس سبانيش لاتيه</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس لاتيه كوكونات</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس لاتيه ستروبيري</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">آيس لاتيه لافندر</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- Hot Latte Section -->
+<div id="lategarm" class="section">
+
+  <div class="pizza">
+    <div class="pizza-text">لاتيه گرم</div>
+    <div class="pizza-line"></div>
+  </div>
+
+  <div class="pizza-row">
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">كافيه لاتيه</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">فانيلا لاتيه</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">كراميل لاتيه</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">سبانيش لاتيه</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">لوتوس لاتيه</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">فستق لاتيه</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">روز لاتيه</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">موكا لاتيه</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">وايت موكا لاتيه</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">كوكونات لاتيه</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">لافندر لاتيه</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- Hot Drinks Section -->
+<div id="garm6" class="section">
+
+  <div class="pizza">
+    <div class="pizza-text">مشروبات حارة</div>
+    <div class="pizza-line"></div>
+  </div>
+
+  <div class="pizza-row">
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">إسبريسو سينغل</p>
+      <p class="pizza-price">2500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">إسبريسو دبل</p>
+      <p class="pizza-price">3500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ريستريتو</p>
+      <p class="pizza-price">2500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ماكياتو</p>
+      <p class="pizza-price">3000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">لونغو</p>
+      <p class="pizza-price">3000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">كون بانا</p>
+      <p class="pizza-price">3500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">أمريكانو</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">كورتادو</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">أفوكاتو</p>
+      <p class="pizza-price">3500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">فلات وايت</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">بيكولو لاتيه</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">كيمكس</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">V60</p>
+      <p class="pizza-price">5000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">قهوة تركي</p>
+      <p class="pizza-price">2000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">قهوة تركي دبل</p>
+      <p class="pizza-price">3000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">قهوة عربي</p>
+      <p class="pizza-price">2000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">قهوة عربي دبل</p>
+      <p class="pizza-price">3000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">قهوة ميستاك</p>
+      <p class="pizza-price">2000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">قهوة ميستاك دبل</p>
+      <p class="pizza-price">3000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">قهوة كزان</p>
+      <p class="pizza-price">2000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">قهوة كزان دبل</p>
+      <p class="pizza-price">3000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">هوت شوكولاتة</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">سحلب</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">حليب ساده</p>
+      <p class="pizza-price">2500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">حليب هينكفين</p>
+      <p class="pizza-price">3500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">نسكافيه</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">كابتشينو</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Energy Mix Section -->
+<div id="energy" class="section">
+
+  <div class="pizza">
+    <div class="pizza-text">إنيرجي ميكس</div>
+    <div class="pizza-line"></div>
+  </div>
+
+  <div class="pizza-row">
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ريدبول ميكس ألفا</p>
+      <p class="pizza-price">5500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ريدبول ميكس</p>
+      <p class="pizza-price">4500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">سمارت ميكس ألفا</p>
+      <p class="pizza-price">3500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">سمارت ميكس</p>
+      <p class="pizza-price">2500 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">وايت تايكر ميكس ألفا</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">وايت تايكر ميكس</p>
+      <p class="pizza-price">3500 IQD</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- Desserts Section -->
+<div id="krib" class="section">
+
+  <div class="pizza">
+    <div class="pizza-text">حلويات</div>
+    <div class="pizza-line"></div>
+  </div>
+
+  <div class="pizza-row">
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">كريب</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+    <div class="pizza-card">
+      <img class="pizza-img" src="../../../assets/oo.png">
+      <p class="pizza-name">ميني بان كيك</p>
+      <p class="pizza-price">4000 IQD</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+</div>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Logo & Name -->
+<div class="footer-logo">
+   <img src="../../../assets/xxx.png" alt="Logo">
+  <h2>مطعم ألفا</h2>
+  <p>مذاق طازج • جودة عالية</p>
+</div>
+
+<!-- Social Media -->
+<div class="footer-social">
+  <h3>تابعنا</h3>
+
+  <a href="#" class="social-link">
+    <i class="fab fa-tiktok"></i> تيك توك
+  </a>
+
+  <a href="#" class="social-link">
+    <i class="fab fa-instagram"></i> إنستغرام
+  </a>
+
+  <a href="#" class="social-link">
+    <i class="fab fa-facebook"></i> فيسبوك
+  </a>
+
+  <a href="#" class="social-link">
+    <i class="fab fa-snapchat"></i> سناب شات
+  </a>
+
+  <a href="https://wa.me/9647500000000" class="social-link">
+    <i class="fab fa-whatsapp"></i> واتساب
+  </a>
+</div>
+
+    <!-- Support Numbers -->
+    <div class="footer-contact">
+      <h3>طلب الطعام</h3>
+
+
+      <p><i class="fas fa-phone"></i> 7503171145</p>
+      <p><i class="fas fa-phone"></i> 7513171145</p>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Alpha Restaurant 
+  </div>
+</footer>
+
+
+                
+
+
+<script>
+const menu = document.querySelector(".scroll-row");
+const buttons = document.querySelectorAll(".scroll-row .btn");
+
+/* ===== STICKY ===== */
+const spacer = document.createElement("div");
+spacer.style.display = "none";
+menu.parentNode.insertBefore(spacer, menu);
+
+let isSticky = false;
+
+window.addEventListener("scroll", function(){
+  const rect = menu.getBoundingClientRect();
+
+  if(rect.top <= 0 && !isSticky){
+    spacer.style.height = menu.offsetHeight + "px";
+    spacer.style.display = "block";
+    menu.style.position = "fixed";
+    menu.style.top = "0";
+    menu.style.left = "0";
+    menu.style.right = "0";
+    menu.style.zIndex = "1000";
+    menu.style.background = "black";
+    isSticky = true;
+  } 
+  else if(window.scrollY < spacer.offsetTop && isSticky){
+    spacer.style.display = "none";
+    menu.style.position = "static";
+    isSticky = false;
+  }
+
+  updateActiveButtonOnScroll();
+});
+
+/* ===== BUTTON CLICK ===== */
+function btnClick(sectionId){
+  const section = document.getElementById(sectionId);
+  if(section){
+    const topPos = section.offsetTop - menu.offsetHeight;
+    window.scrollTo({ top: topPos, behavior: "smooth" });
+
+    // Activate button only, modal should not open automatically
+    setActiveButton(sectionId);
+  }
+}
+function setActiveButton(sectionId){
+  buttons.forEach(btn=>{
+    btn.classList.remove("active");
+    if(btn.getAttribute("onclick").includes(sectionId)){
+      btn.classList.add("active");
+      btn.scrollIntoView({ behavior:"smooth", inline:"center" });
+    }
+  });
+}
+
+function updateActiveButtonOnScroll() {
+  const sections = document.querySelectorAll('.section');
+  const scrollPos = window.scrollY + menu.offsetHeight + 20;
+
+  let current = "";
+  sections.forEach(section=>{
+    if(scrollPos >= section.offsetTop){
+      current = section.id;
+    }
+  });
+
+  if(current){
+    setActiveButton(current);
+  }
+}
+
+/* ================== */
+/* 🔥 FIXED MODAL CODE */
+/* ================== */
+
+function openPizzaModal(card){
+
+  const section = card.closest(".section");
+  const modal = section.querySelector(".pizza-modal");
+
+  const img = card.querySelector(".pizza-img").src;
+  const name = card.querySelector(".pizza-name").innerText;
+  const price = card.querySelector(".pizza-price").innerText;
+
+  modal.querySelector("#modalImg").src = img;
+  modal.querySelector("#modalName").innerText = name;
+  modal.querySelector("#modalPrice").innerText = price;
+
+  modal.style.display = "flex";
+}
+
+function closePizzaModal(){
+  document.querySelectorAll(".pizza-modal").forEach(modal=>{
+    modal.style.display = "none";
+  });
+}
+
+window.addEventListener("click", function(e){
+  if(e.target.classList.contains("pizza-modal")){
+    e.target.style.display = "none";
+  }
+});
+
+
+</script>
+
+  <!-- Pizza -->
+
+
+  
+</body>
+</html>
