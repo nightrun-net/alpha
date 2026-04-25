@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Fira+Sans:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Salsa&family=Tilt+Neon&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Salsa&family=Tagesschrift&display=swap" rel="stylesheet">
+  <title>Alpha Restaurant</title>
+  <link rel="stylesheet" href="rest.css" />
+</head>
+<body>
+
+
+<p class="alpha" id="main-btn" data-key="alpharest"></p>
+<div class="menu-container">
+    
+    <div class="category-tabs">
+        <button class="tab-link active" onclick="switchMenu('hot-section', this)" id="main-btn" data-key="w1"></button>
+        <button class="tab-link" onclick="switchMenu('dessert-section', this)" id="main-btn" data-key="w2"></button>
+    </div>
+
+    <div id="hot-section" class="menu-page active-page">
+      <div class="scroll-row">
+  <button class="btn" onclick="btnClick('Pizza')">
+    <img src="../../assets/024.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="Pizza"></span>
+  </button>
+
+  <button class="btn" onclick="btnClick('Burger')">
+    <img src="../../assets/025.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="Burger"></span>
+  </button>
+
+
+ <button class="btn" onclick="btnClick('Sandwich')">
+    <img src="../../assets/026.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="Sandwich"></span>
+  </button>
+
+
+ <button class="btn" onclick="btnClick('ChickenSaj')">
+    <img src="../../assets/027.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="ChickenSaj"></span>
+  </button>
+
+
+ <button class="btn" onclick="btnClick('MeatSaj')">
+    <img src="../../assets/028.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="MeatSaj"></span>
+  </button>
+
+
+ <button class="btn" onclick="btnClick('Fries')">
+    <img src="../../assets/029.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="Fries"></span>
+  </button>
+
+
+ <button class="btn" onclick="btnClick('AlphaSpecial')">
+    <img src="../../assets/030.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="AlphaSpecial"></span>
+  </button>
+
+ <button class="btn" onclick="btnClick('BoxMeals')">
+    <img src="../../assets/031.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="BoxMeals"></span>
+  </button>
+
+
+ <button class="btn" onclick="btnClick('Pasta')">
+    <img src="../../assets/032.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="Pasta"></span>
+  </button>
+
+
+
+
+ <button class="btn" onclick="btnClick('DietMeals')">
+    <img src="../../assets/033.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="DietMeals"></span>
+  </button>
+
+
+
+ <button class="btn" onclick="btnClick('Steak')">
+    <img src="../../assets/034.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="Steak"></span>
+  </button>
+
+
+ <button class="btn" onclick="btnClick('Shrimp')">
+    <img src="../../assets/035.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="Shrimp"></span>
+  </button>
+
+ <button class="btn" onclick="btnClick('Salads')">
+    <img src="../../assets/036.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="Salads"></span>
+  </button>
+
+ <button class="btn" onclick="btnClick('cola')">
+    <img src="../../assets/037.png" class="btn-img">
+    <span class="btn-name" id="main-btn" data-key="cola"></span>
+  </button>
+
+
+</div>
+
+
+
+<div class="menu1">
+
+<div id="Pizza" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="Pizza" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname1"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice1"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname2"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice2"></p>
+    </div>
+  </div>
+</div>
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname3"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice3"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname4"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice4"></p>
+    </div>
+  </div>
+</div>
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname5"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice5"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname6"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice6"></p>
+    </div>
+  </div>
+</div>
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname7"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice7"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname8"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice8"></p>
+    </div>
+  </div>
+</div>
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname9"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice9"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname10"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice10"></p>
+    </div>
+  </div>
+</div>
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname11"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice11"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname12"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice12"></p>
+    </div>
+  </div>
+</div><div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname13"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice13"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pizzaname14"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pizzaprice14"></p>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<div id="Burger" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="Burger" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Burgername1"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Burgerprice1"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Burgername2"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Burgerprice2"></p>
+    </div>
+  </div>
+</div>
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Burgername3"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Burgerprice3"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Burgername4"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Burgerprice4"></p>
+    </div>
+  </div>
+</div>
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Burgername5"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Burgerprice5"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Burgername6"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Burgerprice6"></p>
+    </div>
+  </div>
+</div>
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Burgername7"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Burgerprice7"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Burgername8"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Burgerprice8"></p>
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+  
+
+
+</div>
+
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="Sandwich" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="Sandwich" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Sandwichname1"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Sandwichprice1"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Sandwichname2"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Sandwichprice2"></p>
+    </div>
+  </div>
+   <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Sandwichname3"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Sandwichprice3"></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+
+  <div id="ChickenSaj" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="ChickenSaj" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="ChickenSajname1"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="ChickenSajprice1"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="ChickenSajname2"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="ChickenSajprice2"></p>
+    </div>
+  </div>
+</div>
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="ChickenSajname3"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="ChickenSajprice3"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="ChickenSajname4"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="ChickenSajprice4"></p>
+    </div>
+  </div>
+</div>
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="ChickenSajname5"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="ChickenSajprice5"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="ChickenSajname6"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="ChickenSajprice6"></p>
+    </div>
+  </div>
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="ChickenSajname7"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="ChickenSajprice7"></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+</div>    
+
+
+<div id="MeatSaj" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="MeatSaj" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="MeatSajname1"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="MeatSajprice1"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="MeatSajname2"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="MeatSajprice2"></p>
+    </div>
+  </div>
+</div>
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="MeatSajname3"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="MeatSajprice3"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="MeatSajname4"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="MeatSajprice4"></p>
+    </div>
+  </div>
+</div>
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="MeatSajname5"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="MeatSajprice5"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="MeatSajname6"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="MeatSajprice6"></p>
+    </div>
+  </div>
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="MeatSajname7"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="MeatSajprice7"></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+
+
+  <div id="Fries" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="Fries" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Appetizersname1"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Appetizersprice1"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Appetizersname2"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Appetizersprice2"></p>
+    </div>
+  </div>
+</div>
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Appetizersname3"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Appetizersprice3"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Appetizersname4"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Appetizersprice4"></p>
+    </div>
+  </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Appetizersname5"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Appetizersprice5"></p>
+    </div>
+  </div>
+   <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Appetizersname6"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Appetizersprice6"></p>
+    </div>
+  </div>
+   <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Appetizersname7"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Appetizersprice7"></p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+</div> 
+
+
+  <div id="AlphaSpecial" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="AlphaSpecial" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" alt="Pizza 1" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" data-key="AlphaSpecialname1"></p>
+      <hr class="separator">
+      <p class="pizza-price" data-key="AlphaSpecialprice1"></p>
+    </div>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" alt="Pizza 2" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" data-key="AlphaSpecialname2"></p>
+      <hr class="separator">
+      <p class="pizza-price" data-key="AlphaSpecialprice2"></p>
+    </div>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" data-key="AlphaSpecialname3"></p>
+      <hr class="separator">
+      <p class="pizza-price" data-key="AlphaSpecialprice3"></p>
+    </div>
+  </div>
+   <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" data-key="AlphaSpecialname4"></p>
+      <hr class="separator">
+      <p class="pizza-price" data-key="AlphaSpecialprice4"></p>
+    </div>
+  </div>
+</div>
+
+<div class="pizza-row">
+ 
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" data-key="AlphaSpecialname5"></p>
+      <hr class="separator">
+      <p class="pizza-price" data-key="AlphaSpecialprice5"></p>
+    </div>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" data-key="AlphaSpecialname6"></p>
+      <hr class="separator">
+      <p class="pizza-price" data-key="AlphaSpecialprice6"></p>
+    </div>
+  </div>
+</div>
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" data-key="AlphaSpecialname7"></p>
+      <hr class="separator">
+      <p class="pizza-price" data-key="AlphaSpecialprice7"></p>
+    </div>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" data-key="AlphaSpecialname8"></p>
+      <hr class="separator">
+      <p class="pizza-price" data-key="AlphaSpecialprice8"></p>
+    </div>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" data-key="AlphaSpecialname9"></p>
+      <hr class="separator">
+      <p class="pizza-price" data-key="AlphaSpecialprice9"></p>
+    </div>
+  </div>
+   <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" data-key="AlphaSpecialname10"></p>
+      <hr class="separator">
+      <p class="pizza-price" data-key="AlphaSpecialprice10"></p>
+    </div>
+  </div>
+</div>
+
+<div class="pizza-row">
+ 
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" data-key="AlphaSpecialname11"></p>
+      <hr class="separator">
+      <p class="pizza-price" data-key="AlphaSpecialprice11"></p>
+    </div>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" data-key="AlphaSpecialname12"></p>
+      <hr class="separator">
+      <p class="pizza-price" data-key="AlphaSpecialprice12"></p>
+    </div>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" data-key="AlphaSpecialname13"></p>
+      <hr class="separator">
+      <p class="pizza-price" data-key="AlphaSpecialprice13"></p>
+    </div>
+  </div>
+</div>
+
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closePizzaModal()">×</span>
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+  </div>
+</div>
+
+</div>
+
+
+
+<div id="BoxMeals" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="BoxMeals" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="BoxMealsname1"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="BoxMealsprice1"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="BoxMealsname2"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="BoxMealsprice2"></p>
+    </div>
+  </div>
+</div>
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="BoxMealsname3"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="BoxMealsprice3"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="BoxMealsname4"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="BoxMealsprice4"></p>
+    </div>
+  </div>
+</div>
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="BoxMealsname5"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="BoxMealsprice5"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="BoxMealsname6"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="BoxMealsprice6"></p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div id="Pasta" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="Pasta" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pastaname1"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pastaprice1"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pastaname2"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pastaprice2"></p>
+    </div>
+  </div>
+</div>
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pastaname3"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pastaprice3"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pastaname4"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pastaprice4"></p>
+    </div>
+  </div>
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Pastaname5"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Pastaprice5"></p>
+    </div>
+  </div>
+</div>
+
+
+  
+
+
+
+
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+
+
+
+
+  <div id="DietMeals" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="DietMeals" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="DietMealsname1"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="DietMealsprice1"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="DietMealsname2"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="DietMealsprice2"></p>
+    </div>
+  </div>
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="DietMealsname3"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="DietMealsprice3"></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+
+  <div id="Steak" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="Steak" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+
+<div class="pizza-row">
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Steakname1"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Steakprice1"></p>
+    </div>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Steakname2"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Steakprice2"></p>
+    </div>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Steakname3"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Steakprice3"></p>
+    </div>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Steakname4"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Steakprice4"></p>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+
+
+<div id="Shrimp" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="Shrimp" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Shrimpname1"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Shrimpprice1"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Shrimpname2"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Shrimpprice2"></p>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+
+
+  <div id="Salads" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="Salads" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Saladsname1"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Saladsprice1"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Saladsname2"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Saladsprice2"></p>
+    </div>
+  </div>
+</div>
+
+<div class="pizza-row">
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Saladsname3"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Saladsprice3"></p>
+    </div>
+  </div>
+  
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Saladsname4"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Saladsprice4"></p>
+    </div>
+  </div>
+
+    <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="Saladsname5"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="Saladsprice5"></p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+</div> 
+
+
+  <div id="cola" class="section">
+<div class="pizza">
+  <div class="pizza-line"></div>
+  <div class="pizza-text" id="main-btn" data-key="cola" ></div>
+  <div class="pizza-line"></div>
+</div>
+
+
+<div class="pizza-row">
+
+<div class="pizza-row">
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="colaname1"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="colaprice1"></p>
+    </div>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="colaname2"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="colaprice2"></p>
+    </div>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="colaname3"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="colaprice3"></p>
+    </div>
+  </div>
+
+  <div class="pizza-card" onclick="openPizzaModal(this)">
+    <img class="pizza-img" id="main-btn" data-key="path">
+    <div class="card-content">
+      <p class="pizza-name" id="main-btn" data-key="colaname4"></p>
+      <hr class="separator">
+      <p class="pizza-price" id="main-btn" data-key="colaprice4"></p>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+<!-- MODAL -->
+<div id="pizzaModal" class="pizza-modal">
+  <div class="modal-content">
+    
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalName"></h3>
+    <p id="modalPrice"></p>
+     <span class="close-btn" onclick="closePizzaModal()">×</span>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+
+
+</div>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="dessert-section" class="menu-page">
+        <div class="pizza-row">
+            <div class="pizza-card" onclick="viewProduct(this)">
+                <img class="pizza-img" data-key="path">
+                <div class="card-content">
+                    <p class="pizza-name" data-key="Dessertsname1"></p>
+                    <hr class="separator">
+                    <p class="pizza-price" data-key="Dessertsprice1"></p>
+                </div>
+            </div>
+            </div>
+    </div>
+
+</div>
+
+
+
+<script>
+const menu = document.querySelector(".scroll-row");
+const buttons = document.querySelectorAll(".scroll-row .btn");
+
+/* ===== STICKY ===== */
+const spacer = document.createElement("div");
+spacer.style.display = "none";
+menu.parentNode.insertBefore(spacer, menu);
+
+let isSticky = false;
+
+window.addEventListener("scroll", function(){
+  const rect = menu.getBoundingClientRect();
+
+  if(rect.top <= 0 && !isSticky){
+    spacer.style.height = menu.offsetHeight + "px";
+    spacer.style.display = "block";
+    menu.style.position = "fixed";
+    menu.style.top = "0";
+    menu.style.left = "0";
+    menu.style.right = "0";
+    menu.style.zIndex = "1000";
+    menu.style.background = "#480606";
+    isSticky = true;
+  } 
+  else if(window.scrollY < spacer.offsetTop && isSticky){
+    spacer.style.display = "none";
+    menu.style.position = "static";
+    isSticky = false;
+  }
+
+  updateActiveButtonOnScroll();
+});
+
+/* ===== BUTTON CLICK ===== */
+function btnClick(sectionId){
+  const section = document.getElementById(sectionId);
+  if(section){
+    const topPos = section.offsetTop - menu.offsetHeight;
+    window.scrollTo({ top: topPos, behavior: "smooth" });
+
+    // Activate button only, modal should not open automatically
+    setActiveButton(sectionId);
+  }
+}
+function setActiveButton(sectionId){
+  buttons.forEach(btn=>{
+    btn.classList.remove("active");
+    if(btn.getAttribute("onclick").includes(sectionId)){
+      btn.classList.add("active");
+      btn.scrollIntoView({ behavior:"smooth", inline:"center" });
+    }
+  });
+}
+
+function updateActiveButtonOnScroll() {
+  const sections = document.querySelectorAll('.section');
+  const scrollPos = window.scrollY + menu.offsetHeight + 20;
+
+  let current = "";
+  sections.forEach(section=>{
+    if(scrollPos >= section.offsetTop){
+      current = section.id;
+    }
+  });
+
+  if(current){
+    setActiveButton(current);
+  }
+}
+
+/* ================== */
+/* 🔥 FIXED MODAL CODE */
+/* ================== */
+
+function openPizzaModal(card){
+
+  const section = card.closest(".section");
+  const modal = section.querySelector(".pizza-modal");
+
+  const img = card.querySelector(".pizza-img").src;
+  const name = card.querySelector(".pizza-name").innerText;
+  const price = card.querySelector(".pizza-price").innerText;
+
+  modal.querySelector("#modalImg").src = img;
+  modal.querySelector("#modalName").innerText = name;
+  modal.querySelector("#modalPrice").innerText = price;
+
+  modal.style.display = "flex";
+}
+
+function closePizzaModal(){
+  document.querySelectorAll(".pizza-modal").forEach(modal=>{
+    modal.style.display = "none";
+  });
+}
+
+window.addEventListener("click", function(e){
+  if(e.target.classList.contains("pizza-modal")){
+    e.target.style.display = "none";
+  }
+});
+
+function switchMenu(sectionId, clickedBtn) {
+    // ١. هەموو لاپەڕەکان بشارەوە
+    const pages = document.querySelectorAll('.menu-page');
+    pages.forEach(page => {
+        page.classList.remove('active-page');
+    });
+
+    // ٢. ستایلی چالاک (سوور) لە هەموو دوگمەکان لابەر
+    const buttons = document.querySelectorAll('.tab-link');
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    // ٣. ئەو لاپەڕەیەی کلیکی لێکراوە نیشانی بدە
+    const selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+        selectedSection.classList.add('active-page');
+    }
+
+    // ٤. دوگمەکە بکە بە چالاک (سوور)
+    clickedBtn.classList.add('active');
+
+    // ٥. گەڕانەوە بۆ سەرەوەی لاپەڕەکە بە نەرمی
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// فەنکشن بۆ کردنەوەی مۆداڵ یان بینینی زانیاری بەرهەم
+function viewProduct(element) {
+    const productName = element.querySelector('.pizza-name').innerText;
+    console.log("Viewing product: " + productName);
+    // لێرە دەتوانی کۆدی openPizzaModal دابنێیتەوە ئەگەر پێویست بوو
+}
+</script>
+
+  <!-- Pizza -->
+<script src="../../script.js"></script>
+
+  
+</body>
+</html>

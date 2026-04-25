@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<title>Alpha Restaurant</title>
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: #000;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.video-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.85));
+  z-index: 1;
+}
+
+/* ===== NEW LANGUAGE DROPDOWN STYLE ===== */
+.lang-dropdown {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.drop-btn {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease;
+}
+
+.drop-btn i {
+  font-size: 18px;
+  color: #fff;
+}
+
+.lang-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #430707;
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+  min-width: 130px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.lang-menu.show {
+  display: flex;
+}
+
+.lang-menu button {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+[dir="rtl"] .lang-menu button {
+  text-align: right;
+}
+
+.lang-menu button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #c5a059;
+}
+
+/* ===== LOGO & BUTTONS ===== */
+.logo {
+  position: absolute;
+  top: 200px; 
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  color: white;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.logo p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px;
+  margin-top: -35px;
+}
+
+.bottom-button {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 60px;
+  background: #430707;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  backdrop-filter: blur(6px);
+  
+  transition: 0.3s;
+  z-index: 2;
+  text-align: center;
+  min-width: 120px;
+}
+
+.bottom-button:hover {
+  background: white;
+  color: black;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* مەودای نێوان چوارچێوەکان */
+  z-index: 2;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;  /* پانی چوارچێوەکە */
+  height: 35px; /* بەرزی چوارچێوەکە */
+  background-color: #430707; /* ڕەنگی سوور بۆ باکگراوند */
+  border-radius: 7px;       /* خڕکردنی گۆشەکان */
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 18px;           /* قەبارەی ئایکۆنەکە لە ناو سوورەکەدا */
+}
+
+/* ڕەنگی ئایکۆنەکان (ئێستا هەموویان دەبنە سپی لەسەر سوورەکە بۆ ئەوەی جوانتر بێت) */
+.social-icons a i {
+  color: #ffffff; 
+}
+
+/* ئەگەر دەتەوێت کاتێک ماوس دەچێتە سەری بجوڵێتەوە */
+.social-icons a:hover {
+  transform: scale(1.1);
+  background-color: #cc0000; /* تۆخکردنی ڕەنگەکە لە کاتی هووڤەر */
+}
+
+/* لادانی ئەو ستایلە کۆنانەی کە ڕەنگی ئایکۆنەکەیان دەگۆڕی بۆ ئەوەی سپی بن */
+.instagram, .tiktok, .snapchat, .phone {
+  -webkit-text-fill-color: initial !important;
+  background-image: none !important;
+}
+</style>
+</head>
+
+<body>
+
+<div class="video-container">
+
+  <div class="lang-dropdown">
+    <button class="drop-btn" onclick="toggleLangMenu()">
+     <i class="fa-solid fa-earth-americas"></i>
+      <span id="active-lang-name">English</span>
+    </button>
+    <div class="lang-menu" id="langMenu">
+      <button onclick="selectLang('en')">English</button>
+      <button onclick="selectLang('ku')">کوردی</button>
+      <button onclick="selectLang('ar')">عربي</button>
+    </div>
+  </div>
+
+  <div class="logo">
+    <img src="./assets/xxx.png" alt="Logo" />
+    <p>Alpha Restaurant</p>
+  </div>
+
+  <video autoplay muted loop playsinline preload="auto">
+    <source src="./assets/aaaa.mp4" type="video/mp4" />
+  </video>
+
+  <a href="./daspek/zman.html" class="bottom-button" id="main-btn" data-key="welcome_text">
+    Welcome
+  </a>
+
+ <div class="social-icons">
+  <a href="https://www.instagram.com/alpha.resturant?igsh=ZWYxOGhna3BxeDV0" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+  <!-- <a href="#" class="social-btn tiktok"><i class="fab fa-tiktok"></i></a> -->
+  <a href="https://www.snapchat.com/add/alpha.rest" class="social-btn snapchat"><i class="fab fa-snapchat"></i></a>
+  <a href="tel:+9647502844454" class="social-btn phone"><i class="fas fa-phone"></i></a>
+  <a href="tel:+9647502944454" class="social-btn phone"><i class="fas fa-phone"></i></a>
+</div>
+
+  <div class="video-gradient"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+// فەنکشن بۆ نیشاندان و شاردنەوەی مێنووەکە
+function toggleLangMenu() {
+    document.getElementById("langMenu").classList.toggle("show");
+}
+
+// فەنکشن بۆ هەڵبژاردنی زمان و داخستنی مێنوو
+function selectLang(lang) {
+    const langNames = {
+        'en': 'English',
+        'ku': 'کوردی',
+        'ar': 'عربي'
+    };
+    
+    // نوێکردنەوەی دەقی ناو دوگمەکە
+    document.getElementById("active-lang-name").innerText = langNames[lang];
+    
+    // جێبەجێکردنی گۆڕانکاری زمان لە سکریپتە دەرەکییەکە
+    if (typeof setLang === "function") {
+        setLang(lang);
+    }
+    
+    // داخستنی مێنووەکە
+    document.getElementById("langMenu").classList.remove("show");
+}
+
+// داخستنی مێنوو ئەگەر لە دەرەوە کلیک کرا
+window.onclick = function(event) {
+    if (!event.target.closest('.lang-dropdown')) {
+        const menu = document.getElementById("langMenu");
+        if (menu.classList.contains('show')) {
+            menu.classList.remove('show');
+        }
+    }
+}
+</script>
+
+</body>
+</html>

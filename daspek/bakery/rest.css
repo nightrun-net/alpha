@@ -1,0 +1,450 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+@font-face {
+  font-family: 'Logirent';
+  src: url('../../../assets/font/logirent.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Arial Black', 'Poppins', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  background:  #480606;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.alpha{
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+     font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+}
+
+
+
+
+
+/* scroll row */
+.scroll-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+   -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
+  scrollbar-width: none; /* Firefox */
+  background-color: #480606;
+}
+
+/* button */
+.scroll-row .btn {
+  position: relative;
+   background-color: #430707;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  min-width: 110px;
+  padding: 10px 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* active button */
+.scroll-row .btn.active {
+  background: #320404;
+  color: white;
+}
+
+/* image */
+.scroll-row .btn .btn-img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+
+}
+
+/* active button image scale */
+.scroll-row .btn.active .btn-img {
+  transform: scale(1.2);
+}
+
+/* name */
+.scroll-row .btn .btn-name {
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  /* position: absolute;  <-- ئەمەمان لادا بۆ ئەوەی نەکەوێتە سەر وێنەکە */
+  position: relative; 
+  display: block;
+  margin-top: 5px; /* کەمێک مەودا لە نێوان وێنە و نوسینەکە */
+}
+
+/* بۆ دڵنیابوونەوە لەوەی هەموو شتێک لە ناوەڕاستە */
+.scroll-row .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.menu1 {
+  margin-top: 20px;
+
+}
+
+
+.pizza {
+  display: flex;
+  align-items: center; /* هێڵەکان و دەقەکە دەخاتە ناوەڕاستی یەکتر بە ستوونی */
+  justify-content: center; /* هەموو شتێک دەخاتە ناوەڕاستی لاپەڕەکە */
+  gap: 15px; /* مەودای نێوان هێڵەکان و دەقەکە */
+  width: 100%;
+  margin: 20px 0;
+}
+
+.pizza-text {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Noticia Text", serif;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  color: #ffffff; /* ئەگەر ویستت سادە بێت */
+  
+  /* Gradient text */
+  background: linear-gradient(90deg, #ffffff, #f1f1f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pizza-line {
+  height: 1px; 
+  width: 80px; /* درێژی هێڵەکە لێرە دیاری بکە - کورت کراوەتەوە */
+  border-radius: 10px;
+  background: linear-gradient( #ffffff); /* وادەکات هێڵەکە لە کۆتاییەکان ون بێت */
+}
+
+/* بۆ موبایل ئەگەر ویستت هێڵەکان کورتتر بن */
+@media (max-width: 480px) {
+ .pizza-line {
+  height: 1px; /* کەمێک ئەستوورتر بۆ ئەوەی لە مۆبایل ڕوون بێت */
+  width: 80px;
+  border-radius: 10px;
+  background: white; /* ڕەنگێکی جێگیر */
+  
+  /* ئەگەر دەتەوێت لە کۆتاییەکان ون بێت (Gradient)، ئەمە بەکاربهێنە: */
+  background: linear-gradient( #ffffff, );
+  
+  margin: 10px auto; /* بۆ ئەوەی لە ناوەڕاست بێت */
+  
+}
+}
+
+
+
+
+
+.pizza-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* مەودای نێوان کارتەکان */
+  padding: 12px;
+  justify-content: center;
+margin-top: -10px;
+}
+
+.pizza-card {
+  /* لێرەدا حسابمان بۆ Gap کردووە بۆ ئەوەی ڕێک ٢ دانە بن */
+  width: calc(50.5% - 6px); 
+  background: #3f0b0b;/* رەنگی ناو کارتەکە */
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom:0px;
+}
+
+.pizza-img {
+  width: 100%; /* گرنگ: بۆ ئەوەی وێنەکە لەگەڵ کارتەکە گەورە و بچووک بێت */
+  height: 140px; /* قەبارەیەکی گونجاو بۆ موبایل */
+  object-fit: cover; /* وێنەکە نابڕێت و بە جوانی جێگیر دەبێت */
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: left; /* یان right ئەگەر بە کوردی نوسیبووت */
+}
+
+.pizza-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  font-family: sans-serif;
+}
+
+.separator {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* ئەو هێڵە باریکەی ناو وێنەکە */
+  margin-bottom: 12px;
+  
+}
+
+.pizza-price {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0;
+  font-size: 12px;
+}
+
+/* بۆ شاشە زۆر بچووکەکان */
+@media (max-width: 350px) {
+  .pizza-name { font-size: 15px; }
+  .pizza-price { font-size: 17px; }
+}
+
+    /* MODAL BACKDROP */
+.pizza-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(6px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* MODAL CARD */
+.modal-content {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  position: relative;
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.modal-content h3 {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.modal-content p {
+  color: #ff5a00;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* CLOSE BUTTON – RESPONSIVE POSITION */
+.close-btn {
+  margin-top: 18px;
+
+  width: 13%;
+  max-width: 220px;
+  height: 40px;
+
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff7a18, #ff5a00);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+  box-shadow: 0 6px 15px rgba(255, 90, 0, 0.6);
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.close-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 90, 0, 0.8);
+}
+
+/* Click */
+.close-btn:active {
+  transform: scale(0.96);
+}
+
+.footer{
+  background:linear-gradient(135deg,#111,#1c1c1c);
+  color:#fff;
+  padding:50px 20px 15px;
+}
+
+.footer-container{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:40px;
+}
+
+.footer-logo img{
+  width:90px;
+  margin-bottom:10px;
+}
+
+.footer-logo h2{
+  color:#ff9800;
+  margin-bottom:5px;
+}
+
+.footer-logo p{
+  font-size:14px;
+  color:#ccc;
+}
+
+.footer-social h3,
+.footer-contact h3{
+  margin-bottom:15px;
+  color:#ff9800;
+}
+
+.footer-social a{
+  display:block;
+  text-decoration:none;
+  color:#ccc;
+  margin-bottom:10px;
+  transition:0.3s;
+}
+
+.footer-social a:hover{
+  color:#ff9800;
+  transform:translateX(6px);
+}
+
+.footer-contact p{
+  margin-bottom:10px;
+  color:#ccc;
+}
+
+.footer-contact i{
+  margin-right:8px;
+  color:#ff9800;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:40px;
+  padding-top:15px;
+  border-top:1px solid #333;
+  color:#aaa;
+  font-size:14px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .footer-container{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+/* شاردنەوەی لاپەڕەی ناچالاک */
+.menu-page {
+    display: none;
+}
+
+/* نیشاندانی لاپەڕەی چالاک */
+.active-page {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* کۆنتێنەری سەرەکی دوگمەکان */
+.category-tabs {
+  display: flex;
+  justify-content: center; /* هێنانە ناوەڕاست */
+  align-items: center;
+  gap: 15px; /* مەودای نێوان دوگمەکان */
+  padding: 20px 10px;
+  position: sticky; /* جێگیر بوون لە کاتی سکڕۆڵ */
+  top: 0;
+  background-color: #480606; /* باکگراوندێکی کەمێک شەفاف */
+  backdrop-filter: blur(10px); /* لێڵ کردنی پشتەوە بۆ جوانی */
+  z-index: 1000;
+}
+
+/* ستایلی بنەڕەتی دوگمەکان */
+.tab-link {
+  flex: 1;
+  max-width: 160px; /* گەورەترین پانی دوگمەکە */
+  padding: 12px 20px;
+  border: 2px solid transparent; /* هێڵێکی شاراوە */
+  border-radius: 15px; /* گۆشە خڕ */
+  background-color: #430707; /* ڕەنگی سەوزە تۆخەکە */
+  color: rgba(255, 255, 255, 0.7); /* ڕەنگی نووسین کەمێک کاڵ */
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* جوڵەیەکی نەرم */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* سێبەر بۆ قووڵی */
+  outline: none;
+}
+
+/* کاتێک ماوس دەچێتە سەر دوگمەکە */
+.tab-link:hover {
+  transform: translateY(-2px); /* کەمێک بەرزبوونەوە */
+  color: white;
+  background-color: #430707;
+}
+
+/* ستایلی دوگمەی چالاک (Active) */
+.tab-link.active {
+  background-color: #430707; /* سووری تۆخ */
+  color: white;
+  border-color: rgba(255, 255, 255, 0.2);
+
+  transform: scale(1.05); /* کەمێک گەورەتر دەبێت */
+}
+
+/* بۆ موبایلە زۆر بچووکەکان */
+@media (max-width: 360px) {
+  .tab-link {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
