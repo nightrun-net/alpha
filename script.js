@@ -1300,7 +1300,7 @@ alpharest:"خوارنگەها ئەلفا",
             
                 sharqiname15: "مەندیێ مریشکێ", sharqiprice15: "10,000 IQD", sharqiimg15: "../../assets1/mn.jpg",
                 sharqiname16: "مەندیێ گوشتی", sharqiprice16: "15,000 IQD", sharqiimg16: "../../assets1/pp116.jpg",
-                sharqiname17: "جلاوي ", sharqiprice17: "15,000 IQD", sharqiimg17: "../../assets1/pp17.jpg",
+                
             
            
                 gass: "گص و شاورما",
@@ -1988,7 +1988,7 @@ alpharest:"مطعم ألفا",
             sharqiname14: "دجاج نص ناشف", sharqiprice14: "10,000 IQD", sharqiimg14: "../../assets1/pp14.jpg",
             sharqiname15: "مندي دجاج", sharqiprice15: "10,000 IQD", sharqiimg15: "../../assets1/mn.jpg",
             sharqiname16: "مندي لحم", sharqiprice16: "15,000 IQD", sharqiimg16: "../../assets1/pp16.jpg",
-            sharqiname17: "جلاوي", sharqiprice17: "15,000 IQD", sharqiimg17: "../../assets1/pp17.jpg",
+            
                 gass: "گص وشاورما",
                 gassname1: "نصف ماعون گص", gassprice1: "8,000 IQD", gassimg1: "../../assets1/tt2.jpg",
                 gassname2: "ماعون گص", gassprice2: "15,000 IQD", gassimg2: "../../assets1/mn.jpg",
