@@ -1262,7 +1262,7 @@ alpharest:"خوارنگەها ئەلفا",
         colaname1: "کۆلا", colaprice1: "1000 IQD", colaimg1: "../../assets1/l1.jpg",
         colaname2: "سپرایت", colaprice2: "1000 IQD", colaimg2: "../../assets1/l2.jpeg",
         colaname3: "فانتا", colaprice3: "1000 IQD", colaimg3: "../../assets1/l3.jpg",
-        colaname4: "ئاڤه ماست", colaprice4: "1000 IQD", colaimg4: "../../assets1/l44.jpg",
+        colaname4: "ئاڤا ماست", colaprice4: "1000 IQD", colaimg4: "../../assets1/l44.jpg",
 
         qali: "تێشتا سپێدەهیا",
         qaliname1: " تێشتا سپێدەهیا ١ نەفەر", qaliprice1: "7,000 IQD", qaliimg1: "../../assets1/rr3.jpg",
