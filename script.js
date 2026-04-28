@@ -618,7 +618,7 @@ alpharest:"ALPHA RESTAURANT",
             sharqiname13: "Pulled Chicken", sharqiprice13: "15,000 IQD", sharqiimg13: "../../assets1/pp13.jpg",
             sharqiname14: "Dry Roasted Half Chicken", sharqiprice14: "10,000 IQD", sharqiimg14: "../../assets1/pp14.jpg",
             
-                sharqiname15: "Chicken Mandi", sharqiprice15: "10,000 IQD", sharqiimg15: "../../assets1/mn.jpg",
+                sharqiname15: "Chicken Mandi", sharqiprice15: "10,000 IQD", sharqiimg15: "../../assets1/abc.jpg",
                 sharqiname16: "Meat Mandi", sharqiprice16: "15,000 IQD", sharqiimg16: "../../assets1/pp16.jpg",
                 
           
@@ -1298,7 +1298,7 @@ alpharest:"خوارنگەها ئەلفا",
            
             sharqiname14: " نيف مریشک ناشف", sharqiprice14: "10,000 IQD", sharqiimg14: "../../assets1/pp14.jpg",
             
-                sharqiname15: "مەندیێ مریشکێ", sharqiprice15: "10,000 IQD", sharqiimg15: "../../assets1/mn.jpg",
+                sharqiname15: "مەندیێ مریشکێ", sharqiprice15: "10,000 IQD", sharqiimg15: "../../assets1/abc.jpg",
                 sharqiname16: "مەندیێ گوشتی", sharqiprice16: "15,000 IQD", sharqiimg16: "../../assets1/pp116.jpg",
                 
             
@@ -1986,7 +1986,7 @@ alpharest:"مطعم ألفا",
             sharqiname11: "منسف ٣ نفر", sharqiprice11: "25,000 IQD", sharqiimg11: "../../assets1/derfet250.jpg",
             sharqiname12: "منسف ٢ نفر", sharqiprice12: "20,000 IQD", sharqiimg12: "../../assets1/dd2.jpg",
             sharqiname14: "دجاج نص ناشف", sharqiprice14: "10,000 IQD", sharqiimg14: "../../assets1/pp14.jpg",
-            sharqiname15: "مندي دجاج", sharqiprice15: "10,000 IQD", sharqiimg15: "../../assets1/mn.jpg",
+            sharqiname15: "مندي دجاج", sharqiprice15: "10,000 IQD", sharqiimg15: "../../assets1/abc.jpg",
             sharqiname16: "مندي لحم", sharqiprice16: "15,000 IQD", sharqiimg16: "../../assets1/pp16.jpg",
             
                 gass: "گص وشاورما",
