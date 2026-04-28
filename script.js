@@ -1970,7 +1970,7 @@ alpharest:"مطعم ألفا",
 
 
 
-
+ 
      
             sharqi: "أكلات شرقية",
             sharqiname1: "قوزي شام", sharqiprice1: "16,000 IQD", sharqiimg1: "../../assets1/dd1.jpg",
