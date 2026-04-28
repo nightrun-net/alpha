@@ -1950,7 +1950,7 @@ alpharest:"مطعم ألفا",
         colaname4: "شنينة", colaprice4: "1000 IQD", colaimg4: "../../assets1/l44.jpg",
 
         qali: "وجبة صباحي",
-        qaliname1: "وجبة صباحي ١ نفر ", qaliprice1: "9,000 IQD", qaliimg1: "../../assets1/rr3.jpg",
+        qaliname1: "وجبة صباحي ١ نفر ", qaliprice1: "7,000 IQD", qaliimg1: "../../assets1/rr3.jpg",
         qaliname2: "وجبة صباحي ٤ نفر ", qaliprice2: "25,000 IQD", qaliimg2: "../../assets1/rr4.jpg",
         qaliname3: " نص قلي", qaliprice3: "6,000 IQD", qaliimg3: "../../assets1/mn.jpg",
         qaliname4: " نص قلي سيل", qaliprice4: "6,000 IQD", qaliimg4: "../../assets1/mn.jpg",
