@@ -191,6 +191,86 @@
 </div> 
  
 
+ <div id="qal" class="section">
+      <div class="pizza">
+        <div class="pizza-line"></div>
+        <div class="pizza-text" id="main-btn" data-key="qal" ></div>
+        <div class="pizza-line"></div>
+      </div>
+      
+      
+      <div class="pizza-row">
+      
+      <div class="pizza-row">
+        <div class="pizza-card" onclick="openPizzaModal(this)">
+          <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="qalimg1">
+          <div class="card-content">
+            <p class="pizza-name" id="main-btn" data-key="qalname1"></p>
+            <hr class="separator">
+            <p class="pizza-price" id="main-btn" data-key="qalprice1"></p>
+          </div>
+        </div>
+        
+        <div class="pizza-card" onclick="openPizzaModal(this)">
+          <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="qalimg2">
+          <div class="card-content">
+            <p class="pizza-name" id="main-btn" data-key="qalname2"></p>
+            <hr class="separator">
+            <p class="pizza-price" id="main-btn" data-key="qalprice2"></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pizza-row">
+        <div class="pizza-card" onclick="openPizzaModal(this)">
+          <img class="pizza-img" id="main-btn" data-key="qalimg3">
+          <div class="card-content">
+            <p class="pizza-name" id="main-btn" data-key="qalname3"></p>
+            <hr class="separator">
+            <p class="pizza-price" id="main-btn" data-key="qalprice3"></p>
+          </div>
+        </div>
+        
+        <div class="pizza-card" onclick="openPizzaModal(this)">
+          <img class="pizza-img" id="main-btn" data-key="qalimg4">
+          <div class="card-content">
+            <p class="pizza-name" id="main-btn" data-key="qalname4"></p>
+            <hr class="separator">
+            <p class="pizza-price" id="main-btn" data-key="qalprice4"></p>
+          </div>
+        </div>
+      </div>
+      <div class="pizza-row">
+        <div class="pizza-card" onclick="openPizzaModal(this)">
+          <img class="pizza-img" id="main-btn" data-key="qalimg5">
+          <div class="card-content">
+            <p class="pizza-name" id="main-btn" data-key="qalname5"></p>
+            <hr class="separator">
+            <p class="pizza-price" id="main-btn" data-key="qalprice5"></p>
+          </div>
+        </div>
+        
+       
+      </div>
+      
+      
+      
+      
+      </div>
+      
+      
+      
+      <!-- MODAL -->
+      <div id="pizzaModal" class="pizza-modal">
+        <div class="modal-content">
+          
+          <img id="modalImg" src="" alt="">
+          <h3 id="modalName"></h3>
+          <p id="modalPrice"></p>
+           <span class="close-btn" onclick="closePizzaModal()">×</span>
+        </div>
+      </div> 
+
 
 
 
@@ -377,87 +457,7 @@
     </div>
     
 
-    <div id="qal" class="section">
-      <div class="pizza">
-        <div class="pizza-line"></div>
-        <div class="pizza-text" id="main-btn" data-key="qal" ></div>
-        <div class="pizza-line"></div>
-      </div>
-      
-      
-      <div class="pizza-row">
-      
-      <div class="pizza-row">
-        <div class="pizza-card" onclick="openPizzaModal(this)">
-          <img class="pizza-img"  alt="Set Menu" id="main-btn" data-key="qalimg1">
-          <div class="card-content">
-            <p class="pizza-name" id="main-btn" data-key="qalname1"></p>
-            <hr class="separator">
-            <p class="pizza-price" id="main-btn" data-key="qalprice1"></p>
-          </div>
-        </div>
-        
-        <div class="pizza-card" onclick="openPizzaModal(this)">
-          <img class="pizza-img"  alt="Mixed" id="main-btn" data-key="qalimg2">
-          <div class="card-content">
-            <p class="pizza-name" id="main-btn" data-key="qalname2"></p>
-            <hr class="separator">
-            <p class="pizza-price" id="main-btn" data-key="qalprice2"></p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="pizza-row">
-        <div class="pizza-card" onclick="openPizzaModal(this)">
-          <img class="pizza-img" id="main-btn" data-key="qalimg3">
-          <div class="card-content">
-            <p class="pizza-name" id="main-btn" data-key="qalname3"></p>
-            <hr class="separator">
-            <p class="pizza-price" id="main-btn" data-key="qalprice3"></p>
-          </div>
-        </div>
-        
-        <div class="pizza-card" onclick="openPizzaModal(this)">
-          <img class="pizza-img" id="main-btn" data-key="qalimg4">
-          <div class="card-content">
-            <p class="pizza-name" id="main-btn" data-key="qalname4"></p>
-            <hr class="separator">
-            <p class="pizza-price" id="main-btn" data-key="qalprice4"></p>
-          </div>
-        </div>
-      </div>
-      <div class="pizza-row">
-        <div class="pizza-card" onclick="openPizzaModal(this)">
-          <img class="pizza-img" id="main-btn" data-key="qalimg5">
-          <div class="card-content">
-            <p class="pizza-name" id="main-btn" data-key="qalname5"></p>
-            <hr class="separator">
-            <p class="pizza-price" id="main-btn" data-key="qalprice5"></p>
-          </div>
-        </div>
-        
-       
-      </div>
-      
-      
-      
-      
-      </div>
-      
-      
-      
-      <!-- MODAL -->
-      <div id="pizzaModal" class="pizza-modal">
-        <div class="modal-content">
-          
-          <img id="modalImg" src="" alt="">
-          <h3 id="modalName"></h3>
-          <p id="modalPrice"></p>
-           <span class="close-btn" onclick="closePizzaModal()">×</span>
-        </div>
-      </div> 
-
-
+   
 
 
 
