@@ -299,7 +299,7 @@ const translations = {
         HotDrinksprice19:"3500 IQD",
         HotDrinksimg19:"",
          HotDrinksname20:"Kazan Coffee",
-        HotDrinksprice20:"2600 IQD",
+        HotDrinksprice20:"2500 IQD",
         HotDrinksimg20:"",
         HotDrinksname21:"Kazan Coffee Double",
         HotDrinksprice21:"3500 IQD",
