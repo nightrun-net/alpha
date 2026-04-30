@@ -1180,7 +1180,7 @@ alpharest:"خوارنگەها ئەلفا",
         ChickenSajname4: "ئالفا ساجا مریشکێ", ChickenSajprice4: "10,000 IQD", ChickenSajimg4: "../../assets1/c4.jpg",
         ChickenSajname5: "ساجا مریشک و چپس", ChickenSajprice5: "8,000 IQD", ChickenSajimg5: "../../assets1/c5.jpg",
         ChickenSajname6: "ئیسکالۆبا مریشکێ", ChickenSajprice6: "8,000 IQD", ChickenSajimg6: "../../assets1/c6.jpg",
-        ChickenSajname7: "کەنتاکیا زارۆکان", ChickenSajprice7: "6,000 IQD", ChickenSajimg7: "../../assets1/mn.jpg",
+        ChickenSajname7: "کەنتاکیا زارۆکان", ChickenSajprice7: "6,000 IQD", ChickenSajimg7: "../../assets1/c7.jpg",
         ChickenSajname8: "ئەلفا پیتا مریشك", ChickenSajprice8: "4,000 IQD", ChickenSajimg8: "../../assets1/darfat2.jpg",
         /* /////////////////// Meat & Saj Badini /////////////////// */
         MeatSaj: "گۆشت و ساج",
