@@ -601,7 +601,7 @@ alpharest:"ALPHA RESTAURANT",
         qalname2: "Qali Pan-Seared", qalprice2: "10,000 IQD", qalimg2: "../../assets1/rr1.jpg",
         qalname3: "Qali Shepherd", qalprice3: "10,000 IQD", qalimg3: "../../assets1/rr2.jpg",
         qalname4: "Qali Liver", qalprice4: "10,000 IQD", qalimg4: "../../assets1/mn.jpg",
-        qalname5: "Qali egge", qalprice5: "10,000 IQD", qalimg5: "../../assets1/mn.jpg",
+        qalname5: "Qali egge", qalprice5: "10,000 IQD", qalimg5: "../../assets1/aram.jpeg",
        
             sharqi: "Eastern Cuisine",
             sharqiname1: "Quzi Sham", sharqiprice1: "16,000 IQD", sharqiimg1: "../../assets1/dd1.jpg",
@@ -1282,7 +1282,7 @@ alpharest:"خوارنگەها ئەلفا",
         qalname2: "قەلی سێل", qalprice2: "10,000 IQD", qalimg2: "../../assets1/rr1.jpg",
         qalname3: "قەلی شڤان", qalprice3: "10,000 IQD", qalimg3: "../../assets1/rr2.jpg",
         qalname4: "قەلی مێلاک", qalprice4: "10,000 IQD", qalimg4: "../../assets1/mn.jpg",
-        qalname5: "قەلی هێك", qalprice5: "10,000 IQD", qalimg5: "../../assets1/mn.jpg",
+        qalname5: "قەلی هێك", qalprice5: "10,000 IQD", qalimg5: "../../assets1/aram.jpeg",
 
             sharqi: "خوارنێن شەرقی",
             sharqiname1: "قوزی شام", sharqiprice1: "16,000 IQD", sharqiimg1: "../../assets1/dd1.jpg",
@@ -1968,7 +1968,7 @@ alpharest:"مطعم ألفا",
         qalname2: "قلي سيل", qalprice2: "10,000 IQD", qalimg2: "../../assets1/rr1.jpg",
         qalname3: "قلي شفان", qalprice3: "10,000 IQD", qalimg3: "../../assets1/rr2.jpg",
         qalname4: "قلي معلاك", qalprice4: "10,000 IQD", qalimg4: "../../assets1/mn.jpg",
-        qalname5: "قلي بيض", qalprice5: "10,000 IQD", qalimg5: "../../assets1/mn.jpg",
+        qalname5: "قلي بيض", qalprice5: "10,000 IQD", qalimg5: "../../assets1/aram.jpeg",
        
 
 
