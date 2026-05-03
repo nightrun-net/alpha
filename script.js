@@ -1400,7 +1400,7 @@ alpharest:"خوارنگەها ئەلفا",
         mojitoimg9: "../../assets5/p9.png",
         mojitoname10: "ألفا مۆهيتو",
         mojitoprice10: "5000 IQD",
-        mojitoimg10: "../../assets5/p19.png",
+        mojitoimg10: "../../assets5/p10.png",
 
         /* /////////////////// Juice Arabic /////////////////// */
         Juice: "عصائر",
