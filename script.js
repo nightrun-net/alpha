@@ -33,7 +33,7 @@ const translations = {
         mojitoimg8:"../../assets5/p8.png",
          mojitoname9:"Pineapple Mojito",
         mojitoprice9:"4000 IQD",
-        mojitoimg9:"../../assets5/p8.png",
+        mojitoimg9:"../../assets5/p9.png",
          mojitoname10:"Alpha Mojito",
         mojitoprice10:"5000 IQD",
         mojitoimg10:"../../assets5/p10.png",
