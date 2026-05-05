@@ -1120,7 +1120,7 @@ HotDrinksname2:"دەبل ئێسپرێسو",
         Donutsname6: "دۆناتا تژی کری ب شوکولاتا دوبەی", Donutsprice6: "3000 IQD", Donutsimg6: "",
         Donutsname7: "مینی دۆناتا ب شەکرێ", Donutsprice7: "250 IQD", Donutsimg7: "",
         Donutsname8: "مینی دۆناتا دێکور کری", Donutsprice8: "1000 IQD", Donutsimg8:"../../assets5/ccv1.png",
-        Donutsname9: "مینی دۆناتا تژی کری", Donutsprice9: "1000 IQD", Donutsimg9:"../../assets5/ccv1.png"ß,
+        Donutsname9: "مینی دۆناتا تژی کری", Donutsprice9: "1000 IQD", Donutsimg9:"../../assets5/ccv1.png",
         /* /////////////////// Eclair Badini /////////////////// */
         Eclair: "ئەکلێر",
         Eclairname1: "ئەکلێرێ پستاشيو", Eclairprice1: "2500 IQD", Eclairimg1:"../../assets5/cc1.png",
