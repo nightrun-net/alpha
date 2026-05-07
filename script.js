@@ -4,7 +4,7 @@ const translations = {
         welcome_text: "Welcome",
         nav:"Restaurant",
         nav1:"bakery",
-        alphabakery:"ALPHA BAKERY",
+        alphabakery:"ALPHA BAKERY", 
         mojito:"mojito",
         path:"../../assets/test.jpeg",
         mojitoname1:"Classic Mojito",
