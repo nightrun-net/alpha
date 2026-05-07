@@ -1,7 +1,7 @@
 // هەموو وەرگێڕانەکانی پرۆژەکە لێرە کۆ دەکرێنەوە
 const translations = {
     en: {
-        welcome_text: "Welcome",
+        welcome_text: "Welcome", 
         nav:"Restaurant",
         nav1:"bakery",
         alphabakery:"ALPHA BAKERY",
