@@ -6,7 +6,7 @@ const translations = {
         nav1:"bakery",
         alphabakery:"ALPHA BAKERY",
         mojito:"mojito",
-        path:"../../assets/test.jpeg",
+        path:"../../assets/test.jpeg", 
         mojitoname1:"Classic Mojito",
         mojitoprice1:"3500 IQD",
         mojitoimg1:"",
