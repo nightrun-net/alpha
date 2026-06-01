@@ -18,7 +18,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-
+padding-top: 50px;
   background:  #480606;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -104,7 +104,7 @@ body {
 
 
 .menu1 {
-  margin-top: 20px;
+  margin-top:20px;
 
 }
 
@@ -391,17 +391,21 @@ margin-top: -10px;
 
 /* کۆنتێنەری سەرەکی دوگمەکان */
 .category-tabs {
-  display: flex;
-  justify-content: center; /* هێنانە ناوەڕاست */
-  align-items: center;
-  gap: 15px; /* مەودای نێوان دوگمەکان */
-  padding: 20px 10px;
-  position: sticky; /* جێگیر بوون لە کاتی سکڕۆڵ */
-  top: 0;
-  background-color: #480606; /* باکگراوندێکی کەمێک شەفاف */
-  backdrop-filter: blur(10px); /* لێڵ کردنی پشتەوە بۆ جوانی */
-  z-index: 1000;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  
+    padding: 20px 10px;
+    background: #480606;
+  
+    z-index: 9999;
+  }
 
 /* ستایلی بنەڕەتی دوگمەکان */
 .tab-link {
