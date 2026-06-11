@@ -1568,6 +1568,9 @@ function openPizzaModal(card){
 
 function closePizzaModal(){
   document.querySelectorAll(".pizza-modal").forEach(modal=>{
+      // Show category tabs
+  document.querySelector(".category-tabs").style.display = "flex";
+
     modal.style.display = "none";
   });
 }
