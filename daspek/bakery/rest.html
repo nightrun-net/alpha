@@ -1560,6 +1560,8 @@ function openPizzaModal(card){
   modal.querySelector("#modalImg").src = img;
   modal.querySelector("#modalName").innerText = name;
   modal.querySelector("#modalPrice").innerText = price;
+  // Hide category tabs
+  document.querySelector(".category-tabs").style.display = "none";
 
   modal.style.display = "flex";
 }
